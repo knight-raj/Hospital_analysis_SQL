@@ -52,9 +52,9 @@ SELECT SUM(Patients_Count) FROM Hospital_Records;
 Calculates the total number of patients across all hospitals and departments.<br>
 Purpose: Calculates the total number of patients across all hospitals and departments. <br>
 
-Explanation:
+####Explanation:
 <li>SUM(Patients_Count) aggregates the Patients_Count column to provide the total number of patients.</li>
-<li></li>It gives an overall idea of the patient load handled by all hospitals in the dataset.</li>
+</li>It gives an overall idea of the patient load handled by all hospitals in the dataset.</li>
 
 ### 2. Average Number of Doctors per Hospital
 ```sql
