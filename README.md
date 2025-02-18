@@ -61,7 +61,7 @@ Explanation:
 SELECT AVG(Doctors_Count)::NUMERIC(10) FROM Hospital_Records;
 ```
 Calculates the average number of doctors working in each hospital. <br>
-Purpose: Calculates the average number of doctors working in each hospital.
+Purpose: Calculates the average number of doctors working in each hospital. <br>
 Explanation:
 <li>AVG(Doctors_Count) computes the average value of the Doctors_Count column.</li>
 <li>::NUMERIC(10) ensures the result is formatted as a numeric value with up to 10 digits.</li>
@@ -74,7 +74,7 @@ ORDER BY Patients_Count DESC
 LIMIT 3;
 ```
 Identifies the top 3 departments with the highest patient counts.<br>
-Purpose: Identifies the top 3 departments with the highest patient counts.
+Purpose: Identifies the top 3 departments with the highest patient counts. <br>
 Explanation:
 <li>ORDER BY Patients_Count DESC sorts the departments in descending order based on the number of patients.</li>
 <li>LIMIT 3 restricts the output to the top 3 departments.</li>
@@ -87,7 +87,7 @@ ORDER BY Medical_Expenses DESC
 LIMIT 3;
 ```
 Finds the hospitals with the highest medical expenses. <br>
-Purpose: Finds the hospitals with the highest medical expenses.
+Purpose: Finds the hospitals with the highest medical expenses. <br>
 Explanation:
 <li>ORDER BY Medical_Expenses DESC sorts the hospitals in descending order based on medical expenses.</li>
 <li>LIMIT 3 restricts the output to the top 3 hospitals.</li>
@@ -105,7 +105,7 @@ SELECT
 FROM Hospital_Records;
 ```
 Calculates the daily average medical expenses for each hospital stay. <br>
-Purpose: Calculates the daily average medical expenses for each hospital stay.
+Purpose: Calculates the daily average medical expenses for each hospital stay. <br>
 Explanation:
 <li>(Discharge_Date - Admission_Date) + 1 calculates the total number of days a patient stayed in the hospital.</li>
 <li>Medical_Expenses / Total_Days computes the average daily expense.</li>
@@ -123,7 +123,7 @@ ORDER BY Stay_Duration_Days DESC
 LIMIT 1;
 ```
 Identifies the hospital stay with the longest duration.<br>
-Purpose: Identifies the hospital stay with the longest duration.
+Purpose: Identifies the hospital stay with the longest duration. <br>
 Explanation:
 <li>(Discharge_Date - Admission_Date) + 1 calculates the total duration of the stay in days</li>
 <li>ORDER BY Stay_Duration_Days DESC sorts the results in descending order.</li>
@@ -140,7 +140,7 @@ GROUP BY Location
 ORDER BY Total_Patients_Treated DESC;
 ```
 Calculates the total number of patients treated in each city.<br>
-Purpose: Calculates the total number of patients treated in each city.
+Purpose: Calculates the total number of patients treated in each city. <br>
 Explanation:
 <li>GROUP BY Location groups the data by city.</li>
 <li>SUM(Patients_Count) calculates the total number of patients per city.</li>
@@ -157,7 +157,7 @@ GROUP BY Department
 ORDER BY Avg_Length_of_Stay_Days DESC;
 ```
 Calculates the average length of stay for patients in each department.<br>
-Purpose: Calculates the average length of stay for patients in each department.
+Purpose: Calculates the average length of stay for patients in each department. <br>
 Explanation:
 <li>(Discharge_Date - Admission_Date) + 1 calculates the duration of each stay.</li>
 <li>AVG() computes the average stay duration for each department.</li>
@@ -176,7 +176,7 @@ ORDER BY Total_Patients ASC
 LIMIT 1;
 ```
 Identifies the department with the lowest patient count. <br>
-Purpose: Identifies the department with the lowest patient count.
+Purpose: Identifies the department with the lowest patient count. <br>
 Explanation:
 <li>SUM(Patients_Count) calculates the total number of patients per department.</li>
 <li>GROUP BY Department groups the data by department.</li>
@@ -194,7 +194,7 @@ GROUP BY TO_CHAR(Admission_Date, 'YYYY-MM')
 ORDER BY Month;
 ```
 Generates a monthly report of total medical expenses. <br>
-Purpose: Generates a monthly report of total medical expenses.
+Purpose: Generates a monthly report of total medical expenses. <br>
 Explanation:
 <li>TO_CHAR(Admission_Date, 'YYYY-MM') extracts the year and month from the Admission_Date.</li>
 <li>SUM(Medical_Expenses) calculates the total expenses for each month.</li>
