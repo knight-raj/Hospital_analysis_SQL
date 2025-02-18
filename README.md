@@ -50,6 +50,11 @@ CSV HEADER;
 SELECT SUM(Patients_Count) FROM Hospital_Records;
 ```
 Calculates the total number of patients across all hospitals and departments.
+Purpose: Calculates the total number of patients across all hospitals and departments.
+
+Explanation:
+SUM(Patients_Count) aggregates the Patients_Count column to provide the total number of patients.
+It gives an overall idea of the patient load handled by all hospitals in the dataset.
 
 ### 2. Average Number of Doctors per Hospital
 ```sql
